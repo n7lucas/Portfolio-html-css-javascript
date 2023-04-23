@@ -41,6 +41,13 @@
     .about-containers {
       margin-top: 0;
     }
+
+    
+    .profile__pic_size{
+      width: 40vh;
+      height: 40vh;
+    }
+
   }
   
   @media screen and (max-width: 600px) {
@@ -96,4 +103,14 @@
     .text-container {
       text-align: justify;
     }
+
+    .profile__pic_size{
+      width: 25vh;
+      height: 25vh;
+    }
+
+    .hamburger-icon.backblack{
+      background-color: white;
+    }
+    
   }

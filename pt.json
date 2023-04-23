@@ -1,0 +1,22 @@
+{
+    "about" : "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "hello": "Olá eu sou",
+    "developer": "Desenvolvedor",
+    "download": "Baixar CV",
+    "contactinfo": "Informações de Contato",
+    "knowme": "Conheça Mais",
+    "aboutme": "Sobre Mim",
+    "education": "Educação",
+    "graduation": "B.S.c Graduação em Ciência da Computação",
+    "masters": "M.sc Mestrado em Matemática e Computação",
+    "description": "Olá me chamo Lucas tenho 26 anos, sou brasileiro e atualmente estou morando em Portugal na cidade de Braga e estou terminando meu mestrado em matemática e computação com foco em Computação e Machine Learning pela universidade do Minho. O objetivo da minha escolha pelo mestrado foi meu interesse por Machine Learning e a possibilidade de um diploma internacional. Meu campo de interesse abrange tanto backEnd quanto o frontEnd além de machine learning. Possuo aptidão proeficiente com a linguagem portuguesa e entendimento claro da linguagem inglesa para quaisquer assuntos e materiais técnicos.",
+    "explore": "Explore Minha",
+    "frontend": "Desenvolvimento Front-End",
+    "browse": "Navegar pelos meus Recentes",
+    "touch": "Entre em Contato",
+    "contactme": "Entre em Contato Comigo",
+    "backend": "Desenvolvimento Back-End/ Utilitários"
+}

@@ -9,22 +9,44 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
-<body>
+<body class=" toggleclass backblack">
     <nav id="desktop-nav">
         <div class="logo">Lucas Mello</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+       
+         <!-- #region 
+            <button id="darkbtn">DARK/WHITE</button>
+          <div>
+            <input type="radio" id="en" name="language" value="en" checked>English
+            <input type="radio" id="pt" name="language" value="pt">Portuguese
+          </div>
+         -->
+            <ul class="nav-links backblack toggleclass">
+                <li><a class="backblack toggleclass"  href="#about" data-i18n="about"></a></li>
+                <li><a class="backblack toggleclass" href="#experience" data-i18n="experience"></a></li>
+                <li><a class="backblack toggleclass" href="#projects" data-i18n="projects"></a></li>
+                <li><a class="backblack toggleclass" href="#contact" data-i18n="contact"></a></li>
             </ul>
+            <div class="options--container backblack toggleclass">
+              <div>
+                <select id="language-select">
+                  <option value="pt" selected>Português</option>
+                  <option value="en" >English</option>
+                </select>
+              </div>
+                <div class ='toggle-switch'>
+                  <label>
+                      <input type = 'checkbox' id="togglecolor">
+                      <span class = 'slider backblack toggleclass'></span>
+                  </label>
+                </div>
+          </div>
         </div>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Lucas Mello</div>
+        
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+            <div class="hamburger-icon toggleclass backblack" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -39,70 +61,63 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img class="profile__pic_size" src="./assets/fotocurriculo.png" alt="Lucas Mello profilke picture"/>
+            <img class="profile__pic_size backblack toggleclass" src="./assets/fotocurriculo.png" alt="Lucas Mello profilke picture"/>
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Helllo, I'm</p>
+            <p class="section__text__p1" data-i18n="hello"></p>
             <h1 class="title">Lucas Mello</h1>
-            <p class="section__text__p2">Developer</p>
+            <p class="section__text__p2"  data-i18n="developer">Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2"
-                    onclick="window.open('./assets/resume-example.pdf')">
-                    Download CV
+                <button class="btn btn-color-2 backblack toggleclass"
+                    onclick="window.open('./assets/resume-example.pdf')"  data-i18n="download">
                 </button>
-                <button class="btn btn-color-1" 
-                    onclick="location.href='./#contact'">
-                    Contact Info
+                <button class="btn btn-color-1 backblack toggleclass" 
+                    onclick="location.href='./#contact'"  data-i18n="contactinfo">
                 </button>
             </div>
             <div id="socials-container">
-                <img
+                <img 
                     src="./assets/linkedin.png" 
                     alt="My LinkedIn profile"
-                    class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/lucas-mello-b831bb153/'"
+                    class="icon backblack toggleclass"
+                    onclick="window.open('https://www.linkedin.com/in/lucas-mello-b831bb153/', '_blank')"
                     />
                 <img
                     src="./assets/github.png" 
                     alt="My Github profile"
-                    class="icon"
-                    onclick="location.href='https://github.com/n7lucas'"
+                    class="icon backblack toggleclass"
+                    onclick="window.open('https://github.com/n7lucas', '_blank')"
                     />    
             </div>
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1"  data-i18n="knowme"></p>
+        <h1 class="title"  data-i18n="aboutme"></h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img
-                    src="./assets/about-pic.png"
+                <img class="gif--container"
+                    src="./assets/stefano.jpg"
                     alt="Profile picture"
-                    class="about-pic"
+                    class="about-pic "
                 />
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
     
-                    <div class="details-container">
+                    <div class="details-container backblack toggleclass">
                         <img
                             src="./assets/education.png"
                             alt="Education icon"
-                            class="icon"
+                            class="icon backblack toggleclass"
                         />
-                        <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree in Computer Science<br/>M.Sc. Master's in Mathematics and Computing</p>
+                        <h3 class="black--white--font"  data-i18n="education"></h3>
+                        <p class="black--white--font"  data-i18n="graduation"></p>
+                        <p class="black--white--font"  data-i18n="masters"></p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Olá me chamo Lucas tenho 26 anos, sou brasileiro e atualmente estou morando em Portugal na cidade de Braga e estou
-                         terminando meu mestrado em matemática e computação com foco em Computação e Machine Learning pela universidade do Minho.
-                         O objetivo da minha escolha pelo mestrado foi meu interesse por Machine Learning e a possibilidade de um diploma internacional.
-                         Meu campo de interesse abrange tanto backEnd quanto o frontEnd além de machine learning. Possuo aptidão proeficiente com a linguagem portuguesa
-                         e entendimento claro da linguagem inglesa para quaisquer assuntos e materiais técnicos.
-                         
-                    </p>
+                    <p  data-i18n="description"></p>
                 </div>
             </div>
         </div>
@@ -114,46 +129,45 @@
         />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <p class="section__text__p1"  data-i18n="explore">Explore My</p>
+        <h1 class="title"  data-i18n="experience"></h1>
         <div class="experience-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
+            <div class="details-container  backblack toggleclass">
+              <h2 class="experience-sub-title"  data-i18n="frontend"></h2>
+              <div class="article-container ">
                 <article>
                     <i class="fa-brands fa-html5"></i>
                   <div>
                     <h3>HTML</h3>
-                    <p>Intermediate</p>
+                    <p></p>
                   </div>
                 </article>
                 <article>
                     <i class="fa-brands fa-css3-alt"></i>
                   <div>
                     <h3>CSS</h3>
-                    <p>Intermediate</p>
+                    <p></p>
                   </div>
                 </article>
                 <article>
                     <i class="fa-brands fa-square-js"></i>
                   <div>
                     <h3>JavaScript</h3>
-                    <p>Intermediate</p>
+                    <p></p>
                   </div>
                 </article>
                 <article>
-                    <img class="img-logo" src="https://img.icons8.com/ios-filled/50/null/typescript.png"/>
+                  <i class="fa-brands fa-react"></i>
                   <div>
-                    <h3>TypeScript</h3>
-                    <p>Basic</p>
+                    <h3>React</h3>
                   </div>
                 </article>
                 
               </div>
             </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="details-container backblack toggleclass">
+              <h2 class="experience-sub-title"  data-i18n="backend"></h2>
               <div class="article-container">
                 <article>
                   <img
@@ -163,22 +177,14 @@
                   />
                   <div>
                     <h3>PostgreSQL</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
-                <article>
-                    <img src="https://img.icons8.com/windows/32/null/nodejs.png"/>
-                  <div>
-                    <h3>Node JS</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-
+               
                 <article>
                     <i class="fa-brands fa-python"></i>
                     <div>
                       <h3>Python</h3>
-                      <p>Intermediate</p>
+   
                     </div>
                   </article>
                 
@@ -186,7 +192,7 @@
                     <i class="fa-brands fa-github"></i>
                   <div>
                     <h3>Git</h3>
-                    <p>Intermediate</p>
+              
                   </div>
                 </article>
               </div>
@@ -201,221 +207,246 @@
         />
       </section>
       <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section__text__p1"  data-i18n="browse"></p>
+        <h1 class="title"  data-i18n="projects">Projects</h1>
         <div class="experience-details-container">
           <div class="about-containers">
-            <div class="details-container color-container">
+           <!----> <div class="details-container color-container backblack toggleclass">
               <div class="article-container">
                 <img
-                  src="./assets/project-1.png"
+                  src="./assets/projectfigures/unitconverter.png"
                   alt="Project 1"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
+              <h2 class="experience-sub-title project-title">Unit Converter</h2>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/tree/main/Module3_UnitConverterSoloProject', '_blank')"
                 >
                   Github
                 </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://zesty-figolla-276575.netlify.app/', '_blank')">
                   Live Demo
                 </button>
               </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container color-container backblack toggleclass">
               <div class="article-container">
                 <img
-                  src="./assets/project-2.png"
+                  src="./assets/projectfigures/passwordgenerator.png"
                   alt="Project 2"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <h2 class="experience-sub-title project-title">Password Generator</h2>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/tree/main/Module3_PasswordGeneratorSoloProject', '_blank')"
                 >
                   Github
                 </button>
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://jocular-duckanoo-82c096.netlify.app/', '_blank')"
                 >
                   Live Demo
                 </button>
               </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container color-container backblack toggleclass">
               <div class="article-container">
                 <img
-                  src="./assets/project-3.png"
+                  src="./assets/projectfigures/memepicker.png"
                   alt="Project 3"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <h2 class="experience-sub-title project-title">Meme Picker</h2>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/tree/main/Module5_CatMemePicker','_blank')"
                 >
                   Github
                 </button>
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="window.open('https://silver-cat-59fc50.netlify.app/', '_blank')"
                 >
                   Live Demo
                 </button>
               </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container color-container backblack toggleclass">
                 <div class="article-container">
                   <img
-                    src="./assets/project-1.png"
+                    src="./assets/projectfigures/burger.png"
                     alt="Project 1"
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">Restaurant Order</h2>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
                 <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/tree/main/Module5_OrderingAppSoloProject', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://velvety-biscotti-9f92c8.netlify.app/index.html', '_blank')"
                   >
                     Live Demo
                   </button>
                 </div>
               </div>
-              <div class="details-container color-container">
+              <div class="details-container color-container backblack toggleclass">
                 <div class="article-container">
                   <img
-                    src="./assets/project-1.png"
+                    src="./assets/projectfigures/warhammer.png"
                     alt="Project 1"
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">Rpg Game</h2>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
                 <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/blob/main/Module7_rpgProject/README.md', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://glistening-genie-1c8508.netlify.app/', '_blank')"
                   >
                     Live Demo
                   </button>
                 </div>
               </div>
-              <div class="details-container color-container">
+              <div class="details-container color-container backblack toggleclass">
                 <div class="article-container">
                   <img
-                    src="./assets/project-1.png"
+                    src="./assets/projectfigures/color.png"
                     alt="Project 1"
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">Color API</h2>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
                 <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/tree/main/Module9_ColorApiSoloProject', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://wonderful-kulfi-9a8526.netlify.app/', '_blank')"
                   >
                     Live Demo
                   </button>
                 </div>
               </div>
-              <div class="details-container color-container">
+              <div class="details-container color-container backblack toggleclass">
                 <div class="article-container">
                   <img
-                    src="./assets/project-1.png"
+                    src="./assets/projectfigures/starwars.png"
                     alt="Project 1"
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">Movie Search API</h2>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
                 <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/tree/main/Module9_MovieSearchAPI', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://mellifluous-sorbet-3abe41.netlify.app/watchlist', '_blank')"
                   >
                     Live Demo
                   </button>
                 </div>
               </div>
-              <div class="details-container color-container">
+              <div class="details-container color-container backblack toggleclass">
                 <div class="article-container">
                   <img
-                    src="./assets/project-1.png"
+                    src="./assets/projectfigures/hackernews.png"
                     alt="Project 1"
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">Hacker News Clone</h2>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
                 <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://github.com/n7lucas/HackerNewsClone', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://iridescent-sunflower-174646.netlify.app', '_blank')"
                   >
                     Live Demo
                   </button>
                 </div>
               </div>
-              <div class="details-container color-container">
+              <div class="details-container color-container backblack toggleclass">
                 <div class="article-container">
                   <img
-                    src="./assets/project-1.png"
+                    src="./assets/projectfigures/quiz.png"
                     alt="Project 1"
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">Quizzical</h2>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-react"></i>
                 <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://github.com/n7lucas/ScrimbaProjects/tree/main/QuizzReact', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
+                    onclick="window.open('https://glittery-starship-07508f.netlify.app/', '_blank')"
                   >
                     Live Demo
                   </button>
@@ -431,39 +462,39 @@
         />
       </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
+        <p class="section__text__p1" data-i18n="touch"></p>
+        <h1 class="title" data-i18n="contactme"></h1>
+        <div class="contact-info-upper-container backblack toggleclass" >
           <div class="contact-info-container">
             <img
               src="./assets/email.png"
               alt="Email icon"
-              class="icon contact-icon email-icon"
+              class="icon contact-icon email-icon backblack toggleclass"
             />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            <p><a href="mailto:lucas_mello_2011@hotmail.com" target="_blank">lucas_mello_2011@hotmail.com</a></p>
           </div>
-          <div class="contact-info-container">
+          <div class="contact-info-container ">
             <img
               src="./assets/linkedin.png"
               alt="LinkedIn icon"
-              class="icon contact-icon"
+              class="icon contact-icon backblack toggleclass"
             />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            <p><a href="https://www.linkedin.com/in/lucas-mello-b831bb153/" target="_blank">LinkedIn</a></p>
           </div>
         </div>
       </section> 
       <footer>
         <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+          <div class="nav-links-container ">
+            <ul class="nav-links ">
+              <li><a class="backblack toggleclass"  href="#about" data-i18n="about"></a></li>
+              <li><a class="backblack toggleclass" href="#experience" data-i18n="experience"></a></li>
+              <li><a class="backblack toggleclass" href="#projects" data-i18n="projects"></a></li>
+              <li><a class="backblack toggleclass" href="#contact" data-i18n="contact"></a></li>
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <p>Copyright &#169; 2023 Lucas Mello. All Rights Reserved.</p>
       </footer>
     <script src="script.js"></script>
 </body>

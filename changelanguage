@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+        <h1 data-i18n="hello"></h1>
+    <p data-i18n="world"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,22 @@
+{
+    "about" : "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hello": "Hello, I'm",
+    "developer": "Developer",
+    "download": "Download CV",
+    "contactinfo": "Contact Info",
+    "knowme": "Get to Know More",
+    "aboutme": "About Me",
+    "education": "Education",
+    "graduation": "B.S.c Bachelors Degree in Computer Science",
+    "masters": "M.sc Master's in Mathematics and Computation",
+    "description": "Hello, my name is Lucas, I'm 26 years old, I'm Brazilian and I'm currently living in Portugal in the city of Braga and I'm finishing my master's degree in Mathematics and Computing with a focus on Computing and Machine Learning at the University of Minho. The purpose of my choice for the master's degree was my interest in Machine Learning and the possibility of an international degree. My field of interest covers both backEnd and frontEnd as well as machine learning. I have proficient aptitude with Portuguese language and clear understanding of English language for any subjects and technical materials.",
+    "explore": "Explore My",
+    "frontend": "Front End Development",
+    "browse": "Browse My Recent",
+    "touch": "Get in Touch",
+    "contactme": "Contact Me",
+    "backend": "Back End Development/ Utilities"
+}

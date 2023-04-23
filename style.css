@@ -67,6 +67,87 @@ a:hover {
     cursor: default;
 }
 
+
+/* Switch ANimation*/
+:root {
+    --light: white;
+    --dark: #1a1a1a;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  } 
+
+
+.toggle-switch {
+    position: relative;
+    width: 100px;
+  }
+  
+  label {
+    position: absolute;
+    width: 75%;
+    height: 40px;
+    background-color: var(--dark);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  input {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    border: 1px solid black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  
+  input:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: inset 10px -2px 0px 0px var(--light);
+    background-color: var(--dark);
+    transition: 0.3s;
+  }
+  
+  input:checked ~ .slider::before {
+    transform: translateX(20px);
+    background-color: var(--dark);
+    box-shadow: none;
+  }
+  
+  .options--container{
+      border: 1px solid black;
+      padding: 1.2em;  
+      padding-bottom: 3em;
+      border-radius: 5px;
+      margin-top: 1em;
+  }
+
+
+
+  select{
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 20px 15px 15px;
+  font-size: 14px;
+  margin-bottom: 0.3em;
+  
+}
+
 /* HAMBURGUER MENU */
 
 #hamburger-nav {
@@ -257,7 +338,7 @@ section {
 }
 
 .btn-color-1:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 .btn-color-2:hover {
@@ -327,6 +408,10 @@ section {
     width: 400px;
     margin: auto 0;;
 }
+
+.gif--container {
+    border-radius: 20px;
+ }
 
 /*EXPERIENCE SECTION*/
 
@@ -446,3 +531,95 @@ footer {
 footer p {
     text-align: center;
 }
+/* Black Color*/
+
+body.backblack {
+    background: #1a1a1a;
+    color: white;
+}
+
+a.backblack {
+    color: white;
+}
+
+p {
+    color: #adb5bd;
+}
+
+.backblack.details-container {
+    background: #1a1a1a;
+    color: white;
+}
+
+button.backblack {
+    color: white;
+}
+
+.icon.backblack {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.about-pic.backblack{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.details-container.backblack {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.details-container.backblack h2 {
+    color: white;
+}
+
+.details-container.backblack button {
+    color: white;
+}
+
+.contact-info-upper-container.backblack {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.contact-info-upper-container.backblack a{
+    color: white;
+}
+
+.nav-links-container.backblack {
+    color: white;
+}
+
+.profile__pic_size.backblack {
+    border: 2px solid white;
+}
+
+.slider.backblack {
+    border: 1px solid white;
+}
+
+.options--container.backblack {
+    border: 1px solid white;
+}
+
+.btn-color-1.backblack:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+  
+/*
+.backblack.details-container p{
+    color: white;
+}
+
+
+
+.backblack.details-container h2{
+    color: white;
+}
+*/
+
+
