@@ -266,8 +266,8 @@ section {
 }
 
 .profile__pic_size {
-    height: 400px;
-    width: 400px;
+    height: 320px;
+    width: 320px;
     border-radius: 50%;
     border: 2px solid black;
 }
