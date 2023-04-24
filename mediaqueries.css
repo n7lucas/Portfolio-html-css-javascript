@@ -112,5 +112,10 @@
     .hamburger-icon.backblack{
       background-color: white;
     }
+
+    .ratata {
+      display: flex;
+      justify-content: space-around;
+  }
     
   }

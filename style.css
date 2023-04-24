@@ -153,6 +153,10 @@ a:hover {
 #hamburger-nav {
     display: none;
 }
+.ratata {
+    display: flex;
+    justify-content: space-around;
+}
 
 .hamburger-menu {
     position: relative;

@@ -1,3 +1,7 @@
+
+
+
+
 /** Toggle menu hide/show stuff */
 function toggleMenu () {
     const menu = document.querySelector(".menu-links")
@@ -19,12 +23,22 @@ function loadLanguage(language) {
         });
       });
   }
-  loadLanguage("pt");
+  loadLanguage("pt"); //Initialize as pt
+
+  //Desktop version
   const languageSelect = document.getElementById('language-select');
   languageSelect.addEventListener('change', () => {
     const language = languageSelect.value;
     loadLanguage(language);
   });
+
+  //Responsive Version
+  const languageSelect2 = document.getElementById('language-select2');
+  languageSelect2.addEventListener('change', () => {
+    const language = languageSelect2.value;
+    loadLanguage(language);
+  });
+
 
   
 
@@ -39,20 +53,37 @@ function loadLanguage(language) {
 
   /** Toggle Page color Stuff */
 
+
+
   const radiocolor = document.getElementById('togglecolor');
   radiocolor.addEventListener('change', () => {
   const elements = document.querySelectorAll('.toggleclass');
-
   elements.forEach((element) => {
     element.classList.toggle('backblack')
   })
   })
+
+
+  const radiocolor2 = document.getElementById('togglecolor2');
+  radiocolor2.addEventListener('change', () => {
+    const elements = document.querySelectorAll('.toggleclass');
+    elements.forEach((element) => {
+      element.classList.toggle('backblack')
+    })
+    })
+
+
+
+
+
   function startwhite(){
     const elements = document.querySelectorAll('.toggleclass');
   elements.forEach((element) => {
     element.classList.remove('backblack')
   })}
   startwhite()
+
+  
   /*
 document.getElementById('darkbtn').addEventListener('click', () => {
   const elements = document.querySelectorAll('.toggleclass');

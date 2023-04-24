@@ -26,25 +26,45 @@
                 <li><a class="backblack toggleclass" href="#projects" data-i18n="projects"></a></li>
                 <li><a class="backblack toggleclass" href="#contact" data-i18n="contact"></a></li>
             </ul>
-            <div class="options--container backblack toggleclass">
+            <div id="toggleOption" class="options--container backblack toggleclass">
+              
               <div>
                 <select id="language-select">
                   <option value="pt" selected>Português</option>
                   <option value="en" >English</option>
                 </select>
+             </div>
+              <div class ='toggle-switch'>
+                <label>
+                    <input type = 'checkbox' id="togglecolor">
+                    <span class = 'slider backblack toggleclass'></span>
+                </label>
               </div>
-                <div class ='toggle-switch'>
-                  <label>
-                      <input type = 'checkbox' id="togglecolor">
-                      <span class = 'slider backblack toggleclass'></span>
-                  </label>
-                </div>
-          </div>
+
+
+             </div>
         </div>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Lucas Mello</div>
+        <div id="toggleOptionS" class="options--container backblack toggleclass">
+          
+
+          <div>
+            <select id="language-select2">
+              <option value="pt" selected>Português</option>
+              <option value="en" >English</option>
+            </select>
+         </div>
+          <div class ='toggle-switch'>
+            <label>
+                <input type = 'checkbox' id="togglecolor2">
+                <span class = 'slider backblack toggleclass'></span>
+            </label>
+          </div>
+
         
+        </div>
         <div class="hamburger-menu">
             <div class="hamburger-icon toggleclass backblack" onclick="toggleMenu()">
                 <span></span>
